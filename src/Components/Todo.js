@@ -5,6 +5,8 @@ function Todo({ list, setList, setName, setEdit, setidEdit, showAlert }) {
   const handleTrash = (id) => {
     setList(list.filter((item) => item.id !== id));
     showAlert('Delete List', 'danger');
+     setName("");
+    setEdit(false);
   };
 
   const editItem = (id) => {
