@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fbad7d;
+  text-align: center;
+}
+
+.Todo-app {
+  margin-top: 20px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.main-form {
+  width: 300px;
+}
+
+.alert {
+  width: 30%;
+  margin: auto;
+}
+
+.list-item {
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.text-list {
+  min-width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.text-list p {
+  padding: 0.5rem;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.text-list p.active {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.check {
+  padding: 0.7rem;
+  background: rgb(11, 212, 162);
+  border: none;
+}
+
+.check .bi {
+  font-size: 1rem;
+  color: #fff;
+}
+.square {
+  border: none;
+  padding: 0.7rem;
+  background: #fbad7d;
+  color: rgb(108, 212, 160);
+}
+
+.trash {
+  border: none;
+  padding: 0.7rem;
+  background: brown;
+  color: white;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.fall {
+  transform: translate(10rem) rotate(45deg);
+  opacity: 0;
+}
