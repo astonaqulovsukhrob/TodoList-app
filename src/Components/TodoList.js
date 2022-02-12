@@ -1,14 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 
 function TodoList({ alist, handleTrash, editItem }) {
+   const [isActive, setActive] = useState(false);
   const check = () => {
-    document.querySelector(".title").classList.toggle("active");
+    setActive(!isActive);
   };
 
   return (
     <div>
       <div className="text-list mt-4">
-        <p className="title">{alist.title}</p>
+        <p className={isActive ? 'active' : null}>{alist.title}</p>
         <div>
           <button className="check" onClick={check}>
             <i class="bi bi-check"></i>
