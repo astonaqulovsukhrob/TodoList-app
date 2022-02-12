@@ -53,16 +53,17 @@ body {
   font-size: 1.2rem;
 }
 
-.text-list p.active {
-  text-decoration: line-through;
-  opacity: 0.5;
-}
-
 .check {
   padding: 0.7rem;
   background: rgb(11, 212, 162);
   border: none;
 }
+
+.active {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
 
 .check .bi {
   font-size: 1rem;
